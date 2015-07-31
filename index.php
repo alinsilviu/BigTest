@@ -43,8 +43,5 @@
 		  </div>
 		</div>
 	</div>
-	<?php 
-	include ('new.php');
-	?>
 </body>
 </html>
