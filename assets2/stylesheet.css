@@ -1,0 +1,97 @@
+html {
+	min-height: 100%;
+}
+body {
+	background: #e4e7ec;
+	background-size: cover;
+	background-repeat: no-repeat;;
+}
+.mijloc {
+	width: 330px;
+	min-height: 360px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+	text-align: center;
+	box-shadow: 0px 10px 20px #D1D0CE;
+	border-radius: 0;
+	margin-top: 100px;
+	padding: 15px;
+}
+ul {
+	background: white;
+	box-shadow: 0px 5px 5px #D1D0CE;
+	margin-top: -3px;
+}
+#email, #pwd {
+	display: block;
+	width: 300px;;
+	margin: auto;
+	border-radius: 0;
+	height: 45px;
+}
+#name2, #email2 {
+	display: block;
+	width: 300px;;
+	margin: auto;
+	border-radius: 0;
+}
+.butoane > .btn-default {
+	font-weight: bold;
+	color: white;
+}
+.nav-pills > li > a {
+  	border-radius: 0;
+ 	height: 53px;
+}
+h1 {
+	font-weight: bold;
+	font-family: inherit;
+	color: #000;
+	text-align: center;
+}
+.navbar-brand {
+    color: #fff;
+    background-color: #aaa;
+    font-weight: bold;
+}
+.btn-success {
+	background-color: #0f9d58;
+}
+.btn-success:hover {
+    background-color: #196c4a;
+}
+#message {
+	display: block;
+	width: 300px;
+	margin: auto;
+}
+#message2 {
+	display: block;
+	width: 300px;
+	margin: auto;
+	border-radius: 0px;
+}
+.mijloc2 {
+	width: 330px;
+	min-height: 450px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+	text-align: center;
+	box-shadow: 0px 10px 20px #D1D0CE;
+	border-radius: 0;
+	margin-top: 100px;
+	padding: 15px;
+}
+#submitbt {
+	background-color: #4285f4;
+}
+#submitbt:hover {
+    background-color: #2e6da4;
+}
+.panel-default {
+	box-shadow: 0px 10px 20px #D1D0CE;
+}
