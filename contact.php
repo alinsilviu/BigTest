@@ -56,9 +56,6 @@
 			</form>
 		</form>
 	</div>
-	<?php
-	include ('new.php');
-	?>
 	<script>
 		$(document).ready(function(){
 		    $('#submitbt').attr('disabled', true);
