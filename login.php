@@ -10,43 +10,24 @@
 	<ul class="nav nav-pills" method="GET">
 	  <li role="presentation"><a class="navbar-brand" href="#"><h4><b>TestProject</b></h4></a>
 	  <li role="presentation"><a href="index.php" style="color: #9C9C9C"><h5>Home</h5></a></li>
-	  <li role="presentation"><a href="contact.php" style="color: #9C9C9C; display: none"><h5>Contact</h5></a></li>
 	  <li role="presentation" class="nav navbar-nav pull-right"><a href="login.php" style="color: #9C9C9C"><h5>Login</h5></a></li>
 	</ul>
 	<div class="mijloc">
 	<br>
 	<h1>Log in</h1>
 		<hr>
-			<form id="contact_form" action="#" method="POST">
+			<form id="contact_form" action="index.php" method="POST">
 			  <div class="form-group">
 			    <input name="username" type="username" class="form-control" id="email" placeholder="Username">
 			  </div>
 			  <div class="form-group">
 			    <input name="password" type="password" class="form-control" id="pwd" placeholder="Password">
 			  </div>
-			  <button id="button" type="submit" class="btn btn-success" style="width: 300px; border-radius: 2px; height: 40px;" value="Submit" disabled="disabled"><b>Log in</b></button>
+			  <button id="button" name="submit" type="submit" class="btn btn-success" style="width: 300px; border-radius: 2px; height: 40px;" value="Submit" disabled="disabled"><b>Log in</b></button>
 			</form>
 			<hr>
 	</div>
-	<?php
-		$match1 = 'admin';
-		$match2 = 'admin';
 	
-		if (isset($_POST['password'])&&isset($_POST['username'])) {
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-	
-			if (!empty($password)&&!empty($username)) {
-				if ($password==$match2&&$username==$match1) {
-					header("Location: index.php");
-				} else {
-					header("Location: login.php");
-				}
-			} else {
-				header("Location: login.php");
-			}
-		}
-	?>
 	<script>
 		$(document).ready(function(){
 		    $('#button').attr('disabled', true);
