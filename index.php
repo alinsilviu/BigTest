@@ -10,10 +10,37 @@
 	<ul class="nav nav-pills" method="GET">
 	  <li role="presentation"><a class="navbar-brand" href="#"><h4><b>TestProject</b></h4></a>
 	  <li role="presentation"><a href="index.php" style="color: #9C9C9C"><h5>Home</h5></a></li>
-	  <li role="presentation"><a href="contact.php" style="color: #9C9C9C"><h5>Contact</h5></a></li>
-	  <li role="presentation" class="nav navbar-nav pull-right"><a href="login.php" style="color: #9C9C9C"><h5>Login</h5></a></li>
+	  <?php
+	  if (isset($_POST['submit'])) {
+	      echo '<li role="presentation"><a href="contact.php" style="color: #9C9C9C"><h5>Contact</h5></a></li>';
+		}
+	  ?>
+	  <li role="presentation" class="nav navbar-nav pull-right">
+	  <?php 
+	  if (isset($_POST['submit'])) {
+	      echo '<a href="index.php" style="color: #9C9C9C"><h5>Logout</h5></a>';
+		} else {
+			echo '<a href="login.php" style="color: #9C9C9C"><h5>Login</h5></a>';
+		}
+	  ?>
+	  </li>
 	</ul>
 	<br><br>
+	<?php
+		$match1 = 'admin';
+		$match2 = 'admin';
+
+		if (isset($_POST['password'])&&isset($_POST['username'])) {
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+
+			if (!empty($password)&&!empty($username)) {
+				if ($password!=$match2&&$username!=$match1) {
+					header("Location: login.php");
+				}
+			}
+		}
+	?>
 	<div ui-view="" class="fadeZoom ng-scope">
 		<div class="container ng-scope">
 		  <div class="panel panel-default">
