@@ -11,7 +11,7 @@
 	  <li role="presentation"><a class="navbar-brand" href="#"><h4><b>TestProject</b></h4></a>
 	  <li role="presentation"><a href="index.php" style="color: #9C9C9C"><h5>Home</h5></a></li>
 	  <li role="presentation"><a href="contact.php" style="color: #9C9C9C"><h5>Contact</h5></a></li>
-	  <li role="presentation" class="nav navbar-nav pull-right"><a href="login.php" style="color: #9C9C9C"><h5>Login</h5></a></li>
+	  <li role="presentation" class="nav navbar-nav pull-right"><a href="index.php" style="color: #9C9C9C"><h5>Logout</h5></a></li>
 	</ul>
 	<div class="mijloc2">
 			<?php
@@ -24,7 +24,7 @@
 					$from = 'test@test.com';
 					$subject = 'Test Project';
 					$body = 'From: '.$contact_name."\n".'Email: '.$contact_email."\n".'Message: '.$contact_text;
-					$headers = 'From: ';
+					$headers = 'From: test@test.com';
 
 					if (@mail($to, $subject, $body, $headers)) {
 						echo '<div class="alert alert-success" role="alert" style="text-align: center">Message successfully sent.</div';
